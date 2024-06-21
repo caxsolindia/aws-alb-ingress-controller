@@ -13,7 +13,7 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-    - host: aws.hardikpatel.work
+    - host: www.example.com
       http:
         paths:
           - path: /

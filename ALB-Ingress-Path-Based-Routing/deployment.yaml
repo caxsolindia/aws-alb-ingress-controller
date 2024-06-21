@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: facebook
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: facebook
+  template:
+    metadata:
+      labels:
+        app: facebook
+    spec:
+      containers:
+      - name: facebook
+        image: gcr.io/google-samples/hello-app:1.0
+        ports:
+        - containerPort: 8080
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: instagram 
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: instagram
+  template:
+    metadata:
+      labels:
+        app: instagram
+    spec:
+      containers:
+      - name: instagram
+        image: gcr.io/google-samples/hello-app:2.0
+        ports:
+        - containerPort: 8080

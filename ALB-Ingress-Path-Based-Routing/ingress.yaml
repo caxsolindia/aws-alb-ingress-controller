@@ -12,7 +12,7 @@ metadata:
     alb.ingress.kubernetes.io/actions.ssl-redirect: '{"Type": "redirect", "RedirectConfig": { "Protocol": "HTTPS", "Port": "443", "StatusCode": "HTTP_301"}}'
 spec:
   rules:
-    - host: aws.hardikpatel.work
+    - host: www.example.com
       http:
          paths:
            - path: /facebook

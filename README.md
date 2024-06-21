@@ -76,7 +76,7 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-    - host: aws.hardikpatel.work
+    - host: www.example.com
       http:
         paths:
           - path: /
@@ -187,7 +187,7 @@ metadata:
     alb.ingress.kubernetes.io/actions.ssl-redirect: '{"Type": "redirect", "RedirectConfig": { "Protocol": "HTTPS", "Port": "443", "StatusCode": "HTTP_301"}}'
 spec:
   rules:
-    - host: aws.hardikpatel.work
+    - host: www.example.com
       http:
          paths:
            - path: /facebook
@@ -232,8 +232,8 @@ kubectl get ingress
 
 5. Access the Applications:
 
-## For the single application, navigate to https://aws.hardikpatel.work.
-## For path-based routing, navigate to https://aws.hardikpatel.work/facebook and https://aws.hardikpatel.work/instagram.
+## For the single application, navigate to https://www.example.com.
+## For path-based routing, navigate to https://www.example.com/facebook and https://www.example.com/instagram.
 
 # Conclusion
 This setup demonstrates deploying applications with an ALB ingress controller using SSL and path-based routing. The configurations provided can be customized to fit your specific use case and environment.

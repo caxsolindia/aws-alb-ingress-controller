@@ -489,4 +489,4 @@ kubectl get ingress
 ## For canary strategy path-based routing, navigate to https://www.example.com/facebook and https://www.example.com/instagram.
 
 # Conclusion
-This setup demonstrates deploying applications with an ALB ingress controller using SSL and path-based routing. The configurations provided can be customized to fit your specific use case and environment.
+This setup demonstrates deploying applications with an ALB ingress controller using SSL, path-based routing, and version-wise canary deployment strategy. The configurations provided showcase how to manage multiple versions of applications, directing traffic based on defined weights for gradual rollout and testing.

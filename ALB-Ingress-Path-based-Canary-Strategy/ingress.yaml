@@ -57,7 +57,8 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-  - http:
+  - host: aws.hardikpatel.work
+    http:
       paths:
         - path: /facebook
           pathType: Prefix
